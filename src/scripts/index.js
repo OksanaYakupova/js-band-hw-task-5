@@ -5,6 +5,7 @@ import Cost from './modules/models/cost.js';
 import CostRenderer from './modules/renderers/cost-renderer.js';
 import transportFactory from './modules/factories/transport-factory.js';
 
+console.log(`Running App version ${VERSION}`);
 
 function addShip(event) {
     event.preventDefault();
