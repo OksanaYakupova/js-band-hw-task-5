@@ -18,6 +18,11 @@ npm run lint
 npm run test
 ```
 
+## Show test coverage
+```
+jest --collectCoverageFrom  "src/**/*.js" --coverage
+```
+
 ## Commit changes
 ```
 npm run commit
@@ -36,6 +41,8 @@ npm run commit
 .eslintrc.json - eslint config
 
 .gitignore - ignored file for git
+
+.travis.yml - Travis CI configuration file
 
 index.html - index.html template
 
