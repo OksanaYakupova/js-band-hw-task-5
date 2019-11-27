@@ -1,0 +1,43 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "ignorePatterns": ["*.test.js", "node_modules/"],
+  "rules": {
+    "import/extensions": [
+      "error",
+      "always"
+    ],
+    "indent": [
+      "error",
+      4
+    ],
+    "no-plusplus": [
+      "off"
+    ],
+    "class-methods-use-this": [
+      "off"
+    ],
+    "no-use-before-define": [
+      "warn"
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ]
+  }
+}
