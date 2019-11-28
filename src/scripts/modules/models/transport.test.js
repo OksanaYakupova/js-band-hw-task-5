@@ -1,7 +1,16 @@
 const Transport = require('./transport').default;
 
-const transport = new Transport('model', 'producedYear', 1, 'averageSpeed');
+const transport = new Transport('model', 1, 1, 1);
 
+test('check transport model', () => {
+    expect(transport.model)
+        .toBe('model');
+});
+
+test('check transport produced year', () => {
+    expect(transport.producedYear)
+        .toBe(1);
+});
 
 test('check transport capacity', () => {
     expect(transport.capacity)
@@ -13,7 +22,7 @@ test('check transport showCapacityInPounds()', () => {
         .toBe(2.20462262);
 });
 
-test('check transport showAverageSpeed(', () => {
+test('check transport showAverageSpeed()', () => {
     expect(transport.showAverageSpeed())
         .toBe(transport.averageSpeed);
 });
